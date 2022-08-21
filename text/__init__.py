@@ -22,7 +22,7 @@ def get_arpabet(word, dictionary):
     return word
 
 
-def text_to_sequence(text, cleaner_names):
+def text_to_sequence(text, cleaner_names, dictionary=None, p_arpabet=1.0):
   '''Converts a string of text to a sequence of IDs corresponding to the symbols in the text.
 
     The text can optionally have ARPAbet sequences enclosed in curly braces embedded
